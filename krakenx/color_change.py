@@ -51,7 +51,7 @@ class KrakenX52:
     if self._fspeed < 25 or self._fspeed > 100 or not isinstance(self._fspeed, int):
       raise ValueError("Fan speed must be integer number between 25 and 100")
 
-    if self._pspeed < 60 or self._pspeed > 100 or not isinstance(self._pspeed, int):
+    if self._pspeed < 50 or self._pspeed > 100 or not isinstance(self._pspeed, int):
       raise ValueError("Pump speed must be integer number between 60 and 100")
 
     self._check_color(self._text_color)
@@ -77,7 +77,7 @@ class KrakenX52:
 
     self._fspeed = kwargs.pop('fspeed', 30)
 
-    self._pspeed = kwargs.pop('pspeed', 60)
+    self._pspeed = kwargs.pop('pspeed', 50)
 
   def _mode_bytes(self, i=0):
     # set the higher 3 bits of the 2rd byte to denote the number of colors being set
