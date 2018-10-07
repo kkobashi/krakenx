@@ -41,7 +41,8 @@ Before you proceed, make sure your file structure looks similar to this:
 These are the minimal folder and files you need to run KrakenX. They must be in this layout or the auto run service will not work.
 
 ### Create a System Daemon Service For KrakenX
-This involves running a text editor (nano in this case) to type some stuff in. You will save the text file in /etc/systemd/service under the filename krakenx.service. 
+
+This involves running a text editor (nano in this case) to type some stuff in. You will save the text file in /etc/systemd/service under the filename krakenx.service.
 
 The parameter settings below are set for (*):
 - SpectrumWave RGB on the pump header
